@@ -23,7 +23,7 @@
     <button><a href="exercicio13.php">Exercício 13</a></button>
     <button><a href="exercicio14.php">Exercício 14</a></button>
     <button><a href="exercicio15.php">Exercício 15</a></button>
-    <button>Exercício 16</button>
+    <button><a href="exercicio16.php">Exercício 16</a></button>
     <button>Exercício 17</button>
     <button>Exercício 18</button>
     <button>Exercício 19</button>

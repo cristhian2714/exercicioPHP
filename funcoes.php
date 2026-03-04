@@ -203,7 +203,16 @@
         }
     }
         
-        
+    //16. Leia três valores e verifique se formam um triangulo. Classifique-os
+    function triangulos($num1,$num2,$num3){
+        if($num1==$num2 && $num2==$num3 && $num1==$num3){
+            return "Triangulo Equilatero";
+        }else if($num1<>$num2 && $num2<>$num3 && $num1<>$num3){
+            return "Triangulo Escaleno";
+        }else{
+            return "O Triangulo é Isosceles";
+        }
+    }
         
     
     
