@@ -132,6 +132,79 @@
 
 
     //9. Leia números até que a soma ultrapasse 100.
+    function somarNumeros($num1,$num2,$num3,$num4,$num5){
+        $soma = 0;
+        $soma = $soma+$num2+$num3+$num4+$num5;
+        if($soma>100){
+            return "Soma passou de 100!";
+        }else{
+            return "A soma não ultrapassou 100!";
+        }
+       
+        }//fim do método
+
+    //10. Solicite senhas até que uma válida seja informada
+    function acertarSenha($senha){
+        $senhaBD = 1234;
+        if($senhaBD == $senha){
+            return "Senha Valida";
+        }else{
+            return "Digite novamente";
+        }
+    }//fim do método 
+
+    //11. Classifique uma pessoa com base na idade: criança, jovem, adulto, idoso
+    function classificaoIdade($idade){
+        if($idade <= 12){
+            return "Criança";
+        }else if($idade <=18){
+                return "Jovem";
+        }else if($idade <=60){
+                return "Adulto";
+        }else{
+             return "Idoso";
+        }
+    }
+
+    //12. Verifique se um número é par ou ímpar.
+    function parImpar($num){
+        if($num%2==0){
+            return "Par";
+        }else{
+            return "Impar";
+        }
+    }
+
+    //13. Leia dois números e exiba o maior deles.
+    function lerNumeros($num1,$num2){
+        if($num1>$num2){
+            return "O primeiro numero é maior";
+        }else{
+            return "O segundo numero é maior";
+        }
+    }
+
+    //14.Imprima os números de 1 a 100 com para.
+    function imprimirNumeros($inicio,$fim){
+        for($i=$inicio;$i <= $fim;$i++){
+            echo "<br>".$i;
+        }      
+
+        
+    }
+
+
+    //15. Verifique se um número é multiplo de 3 e 5 ao mesmo tempo.
+    function multiplos($num){
+        if($num%3==0 && $num%5==0){
+            return "Multiplo de 3 e 5";
+        }else{
+            return "Não é multiplo";
+        }
+    }
+        
+        
+        
     
     
         
