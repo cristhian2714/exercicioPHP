@@ -213,6 +213,120 @@
             return "O Triangulo é Isosceles";
         }
     }
+
+    //17. Leia idades com enquanto ate uma idade negativa ser digitada. Mostre a media
+    function lerEnquanto($num1,$num2,$num3,$num4,$num5){
+        $soma = 0;
+        $soma = $soma+$num1+$num2+$num3+$num4+$num5;
+        $media=$soma/5;
+        return "A média é: $media";
+
+    }
+
+    //18. Leia 10 valores e calcule a media, mostre os que estão acima dela. 
+    function lerValores($num1,$num2,$num3,$num4,$num5,$num6,$num7,$num8,$num9,$num10){
+        $soma = 0;
+        $soma = $soma+$num1+$num2+$num3+$num4+$num5+$num6+$num7+$num8+$num9+$num10;
+        $media=$soma/10;
+        if($media > $soma){
+            return "A média é: $media";
+        }else{
+            return "A soma é maior";
+        }
+        
+
+    }
+
+    //19. Calcule o fatorial de um número com enquanto.
+    function fatorial($num){
+        $fat = 1;
+        $i = 1;
+        while($i <= $num){
+            $fat = $fat * $i;
+            $i++;
+        }
+
+        return "O Fatorial de $num é: $fat";
+    }
+
+    //20. Receba um número de 1 a 7 e mostre o dia da semana correspondente(use escolha/caso)
+    function classificarDia($num){
+        switch ($num) {
+            case 1:
+                return "Domingo";
+                break;//Encerra o switch
+            case 2:
+                return "Segunda-Feira";
+                break;
+            case 3:
+                return "Terça-Feira";
+                break;
+            case 4: 
+                return "Quarta-Feira";
+                break;
+            case 5:
+                return "Quinta-Feira";
+                break;
+            case 6: 
+                return "Sexta-Feira";
+                break;
+            case 7:
+                return "Sábado";
+                break;
+            default:
+                return "O número informado não é inválido";
+                break;
+        }//fim do switch
+    }//fim do método
+
+    //21. Leia um codigo de um produto e informe seu nome e preço.
+    function lerPreco($num1,$num2,$num3,$num4,$num5){
+        if($num1==1){
+            return "Produto 1";
+        }else if($num2==2){
+            return "Produto 2";
+        }else if($num3==3){
+            return "Produto 3";
+        }else if ($num4==4){
+            return "Produto 4";
+        }else if($num5==5){
+            return "Produto 5";
+        }else{
+            return "Codigo não encontrado";
+        }
+
+    }
+
+    //22. Crie uma matriz de indentidade 4x4.
+    function mostrarMatriz($matriz){
+        for($linha=0;$linha<=3;$linha++){
+            for($coluna=0;$coluna<=3;$coluna++){
+                if($linha==$coluna){
+                        $matriz[$linha][$coluna] = 1;
+                    }else{
+                        $matriz[$linha][$coluna]=0;
+        
+                    }
+                
+                echo $matriz[$linha][$coluna]." ";
+            }
+            echo "<br>";
+        }   
+    }
+
+
+    //23. Leia 10 numeros inteiros e armazene em um vetor. Mostre os pares.
+    function mostrarVetor($vetor){
+        foreach ($vetor as $valor){
+            if($valor%2==0){
+                echo $valor. "<br>";
+
+            }
+                
+        }
+    }
+
+
         
     
     
