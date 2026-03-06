@@ -317,14 +317,63 @@
 
     //23. Leia 10 numeros inteiros e armazene em um vetor. Mostre os pares.
     function mostrarVetor($vetor){
-        foreach ($vetor as $valor){
-            if($valor%2==0){
-                echo $valor. "<br>";
-
+        foreach($vetor as $valor){
+            if($valor % 2 ==0){
+                echo "<br>$valor";
             }
-                
         }
     }
+
+    //24. Leia uma matirz 3x3 e imprima sua diagonal principal.
+    function lerMatriz($matriz){
+        for($linha=0;$linha<=3;$linha++){
+            for($coluna=0;$coluna<=3;$coluna++){
+                if($linha=$coluna){
+                    echo $matriz[$linha][$coluna]."";
+                }
+                }
+           
+            }
+            echo "<br>";
+        }
+
+
+    //25. Leia uma matriz 4x4 e exiba a maior linha (com maior soma).
+    function maiorLinha($matriz){
+        $maiorSoma = 0;
+        $maiorLinha = 0;
+        $soma = 0;
+        for($linha=0;$linha<=3;$linha++){
+            for($coluna=0;$coluna<=3;$coluna++){
+                $soma = $soma + (int)$matriz[$linha][$coluna];
+                
+                if($linha == 0){
+                    $maiorSoma  = $soma;
+                    $maiorLinha = $linha;
+                }
+
+                if($soma > $maiorSoma){
+                    $maiorSoma = $soma;
+                    $maiorLinha = $linha;
+                }
+            }
+        }
+
+        for($linha=0;$linha<=3;$linha++){
+            for($coluna=0;$coluna<=3;$coluna++){
+                echo $matriz[$linha][$coluna]." ";
+            }
+            echo "<br>";
+        }
+
+        return "Maior linha: $maiorLinha";
+    }
+    
+
+    //26. Crie dois vetores de 10 posições e preencha um com a soma e outro com a multiplicação entre eles.
+    function doisVetores($vetor1,$vetor2)
+        foreach($vetor1 as $valor1)
+        
 
 
         
